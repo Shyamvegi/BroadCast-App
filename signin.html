@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sign In</title>
+	<link rel="stylesheet" href="./styles.css" >
+	<style>
+		
+
+.chat-container{
+	margin: auto;
+  width: 50%;
+  border: 3px solid green;
+  padding: 10px;
+}
+
+#login{
+    border: 2px solid #dedede;
+    background-color: #996f6f;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 0;
+}
+	</style>
+</head>
+<body>
+<div class="chat-container">
+<p>Enter Nickname</p>
+<input id="username" placeholder="username" />
+<button id="submit-user">Submit</button>
+</div>
+
+	<script src="/socket.io/socket.io.js"></script>
+
+<script>
+
+document.getElementById('submit-user').addEventListener('click',() => {
+	console.log('user submitted', document.getElementById('username').value);
+	window.location.href = "/" + document.getElementById('username').value;
+})
+</script>
+
+</body>
+</html>

@@ -1,0 +1,11 @@
+.chat-container{
+  
+}
+
+#login{
+    border: 2px solid #dedede;
+    background-color: #996f6f;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 0;
+}
