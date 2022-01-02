@@ -1,2 +1,2 @@
 
-## Simple Chatting Application Using Socket.io
+## Simple Chat Application Using Socket.io
